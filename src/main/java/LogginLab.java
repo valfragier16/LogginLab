@@ -24,12 +24,12 @@ public class LogginLab {
         return threshold;
     }
 
-    public void setThreshold(Integer threshold) {
-        this.threshold = threshold;
-    }
+    public void setThreshold(Integer threshold) { this.threshold = threshold; }
 
-    public boolean thresholdExceeds(Integer limit) {
-        return (this.threshold > limit);
+    public boolean thresholdExceeds(Integer limit) { return (this.threshold > limit); }
+
+    public boolean thresholdReached(Integer limit) {
+        return (this.threshold < limit);
     }
 
     // Write a method called thresholdReached, returns true if argument 'limit' is over the threshold.
